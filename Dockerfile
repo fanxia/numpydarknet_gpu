@@ -1,4 +1,4 @@
-FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
+FROM ubuntu:16.04
 
 # install my numpydarknet_gpu
 RUN \
@@ -12,7 +12,7 @@ RUN \
 	python3.6 \
 	python3-pip \
 	&& cd /opt \
-	&& git clone https://github.com/fanxia/numpydarknet_gpu.git \
+	&& git clone https://github.com/fanxia/numpydarknet_gpu.git -b numpydarknet_cpu\
 	&& cd numpydarknet_gpu \
 	&& make \
 	&& mkdir -p lib \
@@ -25,9 +25,6 @@ RUN pip3 install numpy
 # environment variables
 ENV LD_LIBRARY_PATH="/opt/numpydarknet_gpu/lib:$LD_LIBRARY_PATH"
 ENV PYTHONPATH="/opt/numpydarknet_gpu/python:$PYTHONPATH"
-
-# test nvidia docker
-CMD nvidia-smi -q
 
 # defaults command
 CMD ["bash"]
