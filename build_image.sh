@@ -1,1 +1,1 @@
-sudo docker build -t numpydarknet_gpu .
+sudo docker build -t numpydarknet_cpu .
