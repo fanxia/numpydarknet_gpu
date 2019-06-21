@@ -1,1 +1,1 @@
-sudo docker build -t numpydarknet_cpu .
+sudo docker build -t fanxia08/numpydarknet_cpu:v1 .
