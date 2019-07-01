@@ -8,11 +8,8 @@
 Darknet is is an open source neural network framework written in C and CUDA, forked from https://github.com/pjreddie/darknet. Please go there to check rights and license.
 
 This repository was modifited to:
-
 - Integrate Numpy into Darknet and allow it to work with cv2 in python.
-
 - Build docker image based on the modified darknet version.
-
 - Offering both GPU mode and CPU mode. Master branch is the GPU mode, switch to branch numpydarknet_cpu for CPU mode. 
 
 
@@ -27,7 +24,7 @@ The docker image of Numpy Darknet is publicly available. You can pull them from 
 
 ## Running instruction
 
-* Pre-requirement: intall docker.
+* Pre-requirement: install [docker](https://docs.docker.com/v17.12/install/).
 
 ### Run Script
 ```
