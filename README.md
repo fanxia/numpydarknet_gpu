@@ -2,7 +2,7 @@
 
 ## Overview
 
-### Darknet + Numpy
+### Darknet + Numpy   (version made by Fan Xia)
 
 ### Darknet 
 Darknet is is an open source neural network framework written in C and CUDA, forked from https://github.com/pjreddie/darknet. Please go there to check rights and license.
